@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.alex323glo.os.fss.utils.Validator</OriginalElement>
+  <nodes>
+    <node x="2549.457998676427" y="356.0">java.lang.Throwable</node>
+    <node x="7377.772086466165" y="4082.0">com.alex323glo.os.fss.loader.FileSystemLoader</node>
+    <node x="0.0" y="5152.0">com.alex323glo.os.fss.holder.ObjectHolder</node>
+    <node x="3008.7270451214426" y="3295.0">com.alex323glo.os.fss.controller.MenuController</node>
+    <node x="6128.727909115748" y="4283.0">com.alex323glo.os.fss.controller.MenuControllerImpl</node>
+    <node x="1930.9999999999995" y="4070.5">com.alex323glo.os.fss.view.command.implementations.CreateCommand</node>
+    <node x="0.0" y="4070.5">com.alex323glo.os.fss.view.command.implementations.ReadCommand</node>
+    <node x="3917.0625" y="4059.0">com.alex323glo.os.fss.view.command.implementations.LsCommand</node>
+    <node x="6349.290601015608" y="2175.5">com.alex323glo.os.fss.model.descriptor.OpenedFileDescriptor</node>
+    <node x="2209.4163320097605" y="163.0">java.lang.Throwable.SentinelHolder</node>
+    <node x="7032.688753132831" y="783.0">com.alex323glo.os.fss.model.descriptor.DescriptorID</node>
+    <node x="2702.9999999999995" y="4070.5">com.alex323glo.os.fss.view.command.implementations.UnmountCommand</node>
+    <node x="292.0" y="5152.0">com.alex323glo.os.fss.utils.Validator</node>
+    <node x="6247.751253132831" y="1464.5">com.alex323glo.os.fss.model.file.FileType</node>
+    <node x="6091.001253132831" y="620.5">java.lang.Enum</node>
+    <node x="7500.7185150375935" y="4467.0">com.alex323glo.os.fss.loader.VirtualFileSystemLoader</node>
+    <node x="4994.769575782414" y="2175.0">com.alex323glo.os.fss.model.file.FileLink</node>
+    <node x="5075.0625" y="4070.5">com.alex323glo.os.fss.view.command.implementations.MountCommand</node>
+    <node x="3088.9999999999995" y="4058.0">com.alex323glo.os.fss.view.ConsoleListener</node>
+    <node x="5095.520833333333" y="1394.0">com.alex323glo.os.fss.model.file.FileBlock</node>
+    <node x="2964.4388506769983" y="0.0">java.lang.Throwable.PrintStreamOrWriter</node>
+    <node x="1158.9999999999995" y="4070.5">com.alex323glo.os.fss.view.command.implementations.UnlinkCommand</node>
+    <node x="386.0" y="4070.5">com.alex323glo.os.fss.view.command.implementations.TruncateCommand</node>
+    <node x="5394.235776454206" y="1882.0">com.alex323glo.os.fss.model.file.AbstractFile</node>
+    <node x="3147.0624999999995" y="3805.0">com.alex323glo.os.fss.view.command.Command</node>
+    <node x="3460.2695757824144" y="4960.0">com.alex323glo.os.fss.Main</node>
+    <node x="5965.883295121443" y="2637.0">com.alex323glo.os.fss.model.system.FileSystem</node>
+    <node x="2316.9999999999995" y="4070.5">com.alex323glo.os.fss.view.command.implementations.LinkCommand</node>
+    <node x="1544.9999999999995" y="4070.5">com.alex323glo.os.fss.view.command.implementations.FilestatCommand</node>
+    <node x="3229.5312499999995" y="4444.5">com.alex323glo.os.fss.view.ConsoleView</node>
+    <node x="7918.7185150375935" y="4503.0">com.alex323glo.os.fss.model.descriptor.StringDescriptorIDGenerator</node>
+    <node x="6940.397086466165" y="2222.5">com.alex323glo.os.fss.model.descriptor.DescriptorIDGenerator</node>
+    <node x="3324.1888506769983" y="151.0">java.lang.Throwable.WrappedPrintWriter</node>
+    <node x="8167.2185150375935" y="4035.0">com.alex323glo.os.fss.model.descriptor.StringDescriptorID</node>
+    <node x="4303.0625" y="4070.5">com.alex323glo.os.fss.view.command.implementations.CloseCommand</node>
+    <node x="2610.4163320097605" y="151.0">java.lang.Throwable.WrappedPrintStream</node>
+    <node x="2898.791332009761" y="1418.0">java.lang.Exception</node>
+    <node x="4689.0625" y="4070.5">com.alex323glo.os.fss.view.command.implementations.OpenCommand</node>
+    <node x="6387.833953016179" y="198.0">java.io.Serializable</node>
+    <node x="3266.791332009761" y="1916.5">com.alex323glo.os.fss.exception.FileSystemException</node>
+    <node x="771.9999999999995" y="4070.5">com.alex323glo.os.fss.view.command.implementations.WriteCommand</node>
+    <node x="6063.501253132831" y="186.5">java.lang.Comparable</node>
+    <node x="5617.883295121443" y="2175.5">com.alex323glo.os.fss.model.file.File</node>
+    <node x="3545.0624999999995" y="4035.0">com.alex323glo.os.fss.view.CommandMapper</node>
+    <node x="5622.883928571428" y="1417.5">com.alex323glo.os.fss.model.descriptor.FileDescriptor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.WriteCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="0.0" y="-38.5" />
+      <point x="954.9999999999995" y="3935.0" />
+      <point x="923.8999999999996" y="3935.0" />
+      <point x="923.8999999999996" y="2105.0" />
+      <point x="3302.572582009761" y="2105.0" />
+      <point x="-78.71875" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.CreateCommand">
+      <point x="-135.1199999999999" y="-73.5" />
+      <point x="3606.6495757824146" y="4880.0" />
+      <point x="2113.9999999999995" y="4880.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.CloseCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="-137.25" y="-38.5" />
+      <point x="4348.8125" y="3975.0" />
+      <point x="3455.8749999999995" y="3975.0" />
+      <point x="125.8125" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.loader.VirtualFileSystemLoader">
+      <point x="157.63999999999987" y="-73.5" />
+      <point x="3899.4095757824143" y="4890.0" />
+      <point x="7693.7185150375935" y="4890.0" />
+      <point x="0.0" y="74.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.CommandMapper">
+      <point x="-22.519999999999982" y="-73.5" />
+      <point x="3718.6026785714284" y="4263.0" />
+      <point x="3837.5624999999995" y="4263.0" />
+      <point x="117.0" y="74.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuController" target="com.alex323glo.os.fss.model.descriptor.OpenedFileDescriptor">
+      <point x="94.22222222222217" y="-200.0" />
+      <point x="3314.949267343665" y="3175.0" />
+      <point x="4787.133295121443" y="3175.0" />
+      <point x="4787.133295121443" y="2457.0" />
+      <point x="6377.790601015608" y="2457.0" />
+      <point x="-171.0" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.Command" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="0.0" y="-50.0" />
+      <point x="3330.0624999999995" y="3785.0" />
+      <point x="3233.9770451214426" y="3785.0" />
+      <point x="13.25" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.File" target="com.alex323glo.os.fss.model.file.AbstractFile">
+      <point x="-130.80000000000018" y="-85.5" />
+      <point x="5650.5832951214425" y="2045.0" />
+      <point x="5568.110776454206" y="2045.0" />
+      <point x="66.875" y="61.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.WriteCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="73.20000000000027" y="-38.5" />
+      <point x="1028.1999999999998" y="3925.0" />
+      <point x="934.8999999999996" y="3925.0" />
+      <point x="934.8999999999996" y="3735.0" />
+      <point x="3074.9770451214426" y="3735.0" />
+      <point x="-145.75" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuController" target="com.alex323glo.os.fss.model.file.AbstractFile">
+      <point x="0.0" y="-200.0" />
+      <point x="3220.7270451214426" y="3145.0" />
+      <point x="3528.291332009761" y="3145.0" />
+      <point x="3528.291332009761" y="2417.0" />
+      <point x="5359.269575782414" y="2417.0" />
+      <point x="5359.269575782414" y="2155.0" />
+      <point x="5487.860776454206" y="2155.0" />
+      <point x="-13.375" y="61.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.system.FileSystem" target="com.alex323glo.os.fss.model.file.AbstractFile">
+      <point x="-207.15789473684163" y="-224.0" />
+      <point x="6250.725400384601" y="2447.0" />
+      <point x="6338.790601015608" y="2447.0" />
+      <point x="6338.790601015608" y="2035.0" />
+      <point x="5594.860776454206" y="2035.0" />
+      <point x="93.625" y="61.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.LinkCommand">
+      <point x="-112.59999999999991" y="-73.5" />
+      <point x="3629.1695757824145" y="4870.0" />
+      <point x="2499.9999999999995" y="4870.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="java.lang.Throwable.PrintStreamOrWriter" target="java.lang.Throwable">
+      <point x="74.25" y="50.5" />
+      <point x="3137.6888506769983" y="121.0" />
+      <point x="3589.6888506769983" y="121.0" />
+      <point x="3589.6888506769983" y="316.0" />
+      <point x="3096.1246653430935" y="316.0" />
+      <point x="218.66666666666652" y="-454.0" />
+    </edge>
+    <edge source="java.lang.Throwable" target="java.lang.Throwable">
+      <point x="-164.0" y="454.0" />
+      <point x="2713.457998676427" y="1294.0" />
+      <point x="2519.457998676427" y="1294.0" />
+      <point x="2519.457998676427" y="923.5" />
+      <point x="-328.0" y="113.5" />
+    </edge>
+    <edge source="java.lang.Throwable.WrappedPrintWriter" target="java.lang.Throwable">
+      <point x="63.75" y="62.5" />
+      <point x="3515.4388506769983" y="306.0" />
+      <point x="3023.235776454205" y="306.0" />
+      <point x="145.77777777777783" y="-454.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="-136.28571428571468" y="-258.5" />
+      <point x="6204.442194830033" y="4243.0" />
+      <point x="5574.383295121443" y="4243.0" />
+      <point x="5574.383295121443" y="2085.0" />
+      <point x="3460.010082009761" y="2085.0" />
+      <point x="78.71875" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.descriptor.StringDescriptorID" target="com.alex323glo.os.fss.model.descriptor.DescriptorID">
+      <point x="0.0" y="-74.0" />
+      <point x="8277.218515037594" y="1344.0" />
+      <point x="7139.438753132831" y="1344.0" />
+      <point x="45.75" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.descriptor.FileDescriptor" target="com.alex323glo.os.fss.model.descriptor.DescriptorID">
+      <point x="63.25" y="-85.5" />
+      <point x="5812.633928571428" y="1354.0" />
+      <point x="7058.105419799498" y="1354.0" />
+      <point x="-35.58333333333303" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.model.descriptor.OpenedFileDescriptor">
+      <point x="45.42857142857156" y="-258.5" />
+      <point x="6386.1564805443195" y="4213.0" />
+      <point x="7070.896453016179" y="4213.0" />
+      <point x="7070.896453016179" y="2507.0" />
+      <point x="6719.790601015608" y="2507.0" />
+      <point x="171.0" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.CloseCommand">
+      <point x="45.039999999999964" y="-73.5" />
+      <point x="3786.8095757824144" y="4840.0" />
+      <point x="4486.0625" y="4840.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.UnlinkCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="-137.25" y="-38.5" />
+      <point x="1204.7499999999995" y="3935.0" />
+      <point x="1216.4087993282087" y="3935.0" />
+      <point x="1216.4087993282087" y="2115.0" />
+      <point x="3316.885082009761" y="2115.0" />
+      <point x="-64.40625" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.loader.FileSystemLoader">
+      <point x="166.57142857142844" y="-258.5" />
+      <point x="6507.299337687176" y="4253.0" />
+      <point x="7416.105419799498" y="4253.0" />
+      <point x="-76.66666666666697" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.system.FileSystem" target="java.io.Serializable">
+      <point x="362.5263157894733" y="-224.0" />
+      <point x="6820.409610910916" y="2587.0" />
+      <point x="6927.568139097744" y="2587.0" />
+      <point x="6927.568139097744" y="2145.0" />
+      <point x="7165.188753132831" y="2145.0" />
+      <point x="7165.188753132831" y="336.0" />
+      <point x="6483.667286349512" y="336.0" />
+      <point x="38.33333333333303" y="15.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.system.FileSystem" target="com.alex323glo.os.fss.model.descriptor.FileDescriptor">
+      <point x="103.57894736842081" y="-224.0" />
+      <point x="6561.4622424898635" y="2537.0" />
+      <point x="6839.35980576441" y="2537.0" />
+      <point x="6839.35980576441" y="1672.0" />
+      <point x="5816.850595238096" y="1672.0" />
+      <point x="67.46666666666715" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.LinkCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="137.25" y="-38.5" />
+      <point x="2637.2499999999995" y="4005.0" />
+      <point x="3295.7499999999995" y="4005.0" />
+      <point x="-34.3125" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.system.FileSystem" target="com.alex323glo.os.fss.model.descriptor.OpenedFileDescriptor">
+      <point x="-155.36842105263167" y="-224.0" />
+      <point x="6302.514874068811" y="2487.0" />
+      <point x="6548.790601015608" y="2487.0" />
+      <point x="0.0" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.TruncateCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="137.25" y="-38.5" />
+      <point x="706.25" y="3955.0" />
+      <point x="3181.3749999999995" y="3955.0" />
+      <point x="-148.6875" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.LsCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="-137.25" y="-50.0" />
+      <point x="3962.8125" y="3985.0" />
+      <point x="3432.9999999999995" y="3985.0" />
+      <point x="102.9375" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.MountCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="-137.25" y="-38.5" />
+      <point x="5120.8125" y="3935.0" />
+      <point x="3501.6249999999995" y="3935.0" />
+      <point x="171.5625" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.OpenCommand" target="com.alex323glo.os.fss.model.descriptor.OpenedFileDescriptor">
+      <point x="137.25" y="-38.5" />
+      <point x="5009.3125" y="4015.0" />
+      <point x="5121.8125" y="4015.0" />
+      <point x="5121.8125" y="3225.0" />
+      <point x="5381.269575782414" y="3225.0" />
+      <point x="5381.269575782414" y="2477.0" />
+      <point x="6491.790601015608" y="2477.0" />
+      <point x="-57.0" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.descriptor.DescriptorIDGenerator" target="com.alex323glo.os.fss.model.descriptor.DescriptorID">
+      <point x="0.0" y="-38.5" />
+      <point x="7115.897086466165" y="2155.0" />
+      <point x="7263.688753132831" y="2155.0" />
+      <point x="7263.688753132831" y="1374.0" />
+      <point x="7108.938753132831" y="1374.0" />
+      <point x="15.25" y="27.0" />
+    </edge>
+    <edge source="java.lang.Throwable.WrappedPrintStream" target="java.lang.Throwable.PrintStreamOrWriter">
+      <point x="0.0" y="-62.5" />
+      <point x="2743.9163320097605" y="131.0" />
+      <point x="3038.6888506769983" y="131.0" />
+      <point x="-24.75" y="50.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.FilestatCommand" target="com.alex323glo.os.fss.model.descriptor.FileDescriptor">
+      <point x="-137.25" y="-38.5" />
+      <point x="1590.7499999999995" y="3935.0" />
+      <point x="1488.7837993282087" y="3935.0" />
+      <point x="1488.7837993282087" y="1782.0" />
+      <point x="5648.183928571429" y="1782.0" />
+      <point x="-101.19999999999982" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.ReadCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="45.75" y="-38.5" />
+      <point x="228.75" y="4015.0" />
+      <point x="142.28379932820826" y="4015.0" />
+      <point x="142.28379932820826" y="3715.0" />
+      <point x="3021.9770451214426" y="3715.0" />
+      <point x="-198.75" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.OpenCommand">
+      <point x="67.55999999999995" y="-73.5" />
+      <point x="3809.3295757824144" y="4850.0" />
+      <point x="4872.0625" y="4850.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.CreateCommand" target="com.alex323glo.os.fss.model.file.File">
+      <point x="-45.75" y="-38.5" />
+      <point x="2068.2499999999995" y="3935.0" />
+      <point x="2062.2837993282087" y="3935.0" />
+      <point x="2062.2837993282087" y="3155.0" />
+      <point x="3539.291332009761" y="3155.0" />
+      <point x="3539.291332009761" y="2437.0" />
+      <point x="5650.5832951214425" y="2437.0" />
+      <point x="-130.80000000000018" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.loader.VirtualFileSystemLoader" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="144.75" y="-74.5" />
+      <point x="7838.4685150375935" y="4263.0" />
+      <point x="7752.9685150375935" y="4263.0" />
+      <point x="7752.9685150375935" y="2025.0" />
+      <point x="3488.635082009761" y="2025.0" />
+      <point x="107.34375" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.FilestatCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="-45.75" y="-38.5" />
+      <point x="1682.2499999999995" y="3935.0" />
+      <point x="1676.2837993282087" y="3935.0" />
+      <point x="1676.2837993282087" y="2125.0" />
+      <point x="3331.197582009761" y="2125.0" />
+      <point x="-50.09375" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuController" target="com.alex323glo.os.fss.model.descriptor.DescriptorID">
+      <point x="-188.44444444444434" y="-200.0" />
+      <point x="3032.2826006769983" y="3105.0" />
+      <point x="3245.291332009761" y="3105.0" />
+      <point x="3245.291332009761" y="1334.0" />
+      <point x="7037.772086466164" y="1334.0" />
+      <point x="-55.91666666666697" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.controller.MenuControllerImpl">
+      <point x="135.1199999999999" y="-73.5" />
+      <point x="3876.8895757824143" y="4880.0" />
+      <point x="6340.727909115748" y="4880.0" />
+      <point x="0.0" y="258.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.TruncateCommand">
+      <point x="-247.7199999999998" y="-73.5" />
+      <point x="3494.0495757824146" y="4930.0" />
+      <point x="569.0" y="4930.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.model.descriptor.FileDescriptor">
+      <point x="-202.67999999999984" y="-73.5" />
+      <point x="3539.0895757824146" y="4910.0" />
+      <point x="1148.4999999999995" y="4910.0" />
+      <point x="1148.4999999999995" y="1772.0" />
+      <point x="5631.317261904762" y="1772.0" />
+      <point x="-118.0666666666666" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.FilestatCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="137.25" y="-38.5" />
+      <point x="1865.2499999999995" y="3985.0" />
+      <point x="3249.9999999999995" y="3985.0" />
+      <point x="-80.0625" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.ReadCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="137.25" y="-38.5" />
+      <point x="320.25" y="3945.0" />
+      <point x="3158.4999999999995" y="3945.0" />
+      <point x="-171.5625" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.CommandMapper" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="87.75" y="-74.0" />
+      <point x="3808.3124999999995" y="4005.0" />
+      <point x="3387.2499999999995" y="4005.0" />
+      <point x="57.1875" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.model.descriptor.StringDescriptorID">
+      <point x="247.7199999999998" y="-73.5" />
+      <point x="3989.4895757824142" y="4930.0" />
+      <point x="8332.218515037594" y="4930.0" />
+      <point x="55.0" y="74.0" />
+    </edge>
+    <edge source="java.lang.Throwable" target="java.lang.Throwable.SentinelHolder">
+      <point x="-218.66666666666697" y="-454.0" />
+      <point x="2658.79133200976" y="326.0" />
+      <point x="2304.6663320097605" y="326.0" />
+      <point x="-95.25" y="50.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.OpenCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="-137.25" y="-38.5" />
+      <point x="4734.8125" y="3955.0" />
+      <point x="3478.7499999999995" y="3955.0" />
+      <point x="148.6875" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.FileLink" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="-151.71428571428532" y="-86.0" />
+      <point x="5020.055290068129" y="2135.0" />
+      <point x="3417.072582009761" y="2135.0" />
+      <point x="35.78125" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.TruncateCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="45.75" y="-38.5" />
+      <point x="614.75" y="3935.0" />
+      <point x="528.2837993282083" y="3935.0" />
+      <point x="528.2837993282083" y="3725.0" />
+      <point x="3048.4770451214426" y="3725.0" />
+      <point x="-172.25" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.FilestatCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="45.75" y="-38.5" />
+      <point x="1773.7499999999995" y="3935.0" />
+      <point x="1687.2837993282087" y="3935.0" />
+      <point x="1687.2837993282087" y="3755.0" />
+      <point x="3127.9770451214426" y="3755.0" />
+      <point x="-92.75" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.File" target="com.alex323glo.os.fss.model.descriptor.FileDescriptor">
+      <point x="65.39999999999964" y="-85.5" />
+      <point x="5846.783295121442" y="2145.0" />
+      <point x="6296.751253132831" y="2145.0" />
+      <point x="6296.751253132831" y="1722.0" />
+      <point x="5766.250595238095" y="1722.0" />
+      <point x="16.866666666666788" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.OpenCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="45.75" y="-38.5" />
+      <point x="4917.8125" y="4005.0" />
+      <point x="5110.8125" y="4005.0" />
+      <point x="5110.8125" y="3215.0" />
+      <point x="5370.269575782414" y="3215.0" />
+      <point x="5370.269575782414" y="2105.0" />
+      <point x="3431.385082009761" y="2105.0" />
+      <point x="50.09375" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.UnmountCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="122.0" y="-38.5" />
+      <point x="3007.9999999999995" y="4015.0" />
+      <point x="3318.6249999999995" y="4015.0" />
+      <point x="-11.4375" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.UnlinkCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="45.75" y="-38.5" />
+      <point x="1387.7499999999995" y="3935.0" />
+      <point x="1301.2837993282087" y="3935.0" />
+      <point x="1301.2837993282087" y="3745.0" />
+      <point x="3101.4770451214426" y="3745.0" />
+      <point x="-119.25" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.CloseCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="-45.75" y="-38.5" />
+      <point x="4440.3125" y="3965.0" />
+      <point x="4327.8125" y="3965.0" />
+      <point x="4327.8125" y="3745.0" />
+      <point x="3339.9770451214426" y="3745.0" />
+      <point x="119.25" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.AbstractFile" target="com.alex323glo.os.fss.model.file.FileBlock">
+      <point x="-89.16666666666697" y="-61.5" />
+      <point x="5412.069109787539" y="1762.0" />
+      <point x="5203.854166666666" y="1762.0" />
+      <point x="8.33333333333303" y="109.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.UnmountCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="-122.0" y="-38.5" />
+      <point x="2763.9999999999995" y="3935.0" />
+      <point x="2654.4087993282087" y="3935.0" />
+      <point x="2654.4087993282087" y="2155.0" />
+      <point x="3374.135082009761" y="2155.0" />
+      <point x="-7.15625" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.system.FileSystem" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="-362.5263157894733" y="-224.0" />
+      <point x="6095.356979331969" y="2387.0" />
+      <point x="5585.383295121443" y="2387.0" />
+      <point x="5585.383295121443" y="2075.0" />
+      <point x="3474.322582009761" y="2075.0" />
+      <point x="93.03125" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.LsCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="45.75" y="-50.0" />
+      <point x="4145.8125" y="4005.0" />
+      <point x="4338.8125" y="4005.0" />
+      <point x="4338.8125" y="2155.0" />
+      <point x="3388.447582009761" y="2155.0" />
+      <point x="7.15625" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.model.system.FileSystem">
+      <point x="15.142857142856883" y="-258.5" />
+      <point x="6355.870766258605" y="4203.0" />
+      <point x="6408.716628454777" y="4203.0" />
+      <point x="6408.716628454777" y="3265.0" />
+      <point x="6457.883295121443" y="3265.0" />
+      <point x="0.0" y="224.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.OpenCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="-45.75" y="-38.5" />
+      <point x="4826.3125" y="3945.0" />
+      <point x="4713.8125" y="3945.0" />
+      <point x="4713.8125" y="3735.0" />
+      <point x="3366.4770451214426" y="3735.0" />
+      <point x="145.75" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.loader.VirtualFileSystemLoader" target="com.alex323glo.os.fss.model.system.FileSystem">
+      <point x="48.25" y="-74.5" />
+      <point x="7741.9685150375935" y="3245.0" />
+      <point x="6785.883295121443" y="3245.0" />
+      <point x="328.0" y="224.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.LinkCommand" target="com.alex323glo.os.fss.model.file.FileLink">
+      <point x="-45.75" y="-38.5" />
+      <point x="2454.2499999999995" y="3935.0" />
+      <point x="2448.2837993282087" y="3935.0" />
+      <point x="2448.2837993282087" y="3145.0" />
+      <point x="2911.461805555555" y="3145.0" />
+      <point x="2911.461805555555" y="2387.0" />
+      <point x="5083.269575782414" y="2387.0" />
+      <point x="-88.5" y="86.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="-196.85714285714312" y="-258.5" />
+      <point x="6143.870766258605" y="4263.0" />
+      <point x="5469.883928571428" y="4263.0" />
+      <point x="5469.883928571428" y="3715.0" />
+      <point x="3419.4770451214426" y="3715.0" />
+      <point x="198.75" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.MountCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="45.75" y="-38.5" />
+      <point x="5303.8125" y="4015.0" />
+      <point x="5262.221299328208" y="4015.0" />
+      <point x="5262.221299328208" y="3235.0" />
+      <point x="5444.860776454206" y="3235.0" />
+      <point x="5444.860776454206" y="2095.0" />
+      <point x="3445.697582009761" y="2095.0" />
+      <point x="64.40625" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.ReadCommand" target="com.alex323glo.os.fss.model.file.FileBlock">
+      <point x="-137.25" y="-38.5" />
+      <point x="45.75" y="4015.0" />
+      <point x="120.28379932820826" y="4015.0" />
+      <point x="120.28379932820826" y="1712.0" />
+      <point x="5103.854166666666" y="1712.0" />
+      <point x="-91.66666666666697" y="109.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.model.descriptor.DescriptorID">
+      <point x="270.24000000000024" y="-73.5" />
+      <point x="4012.0095757824147" y="4940.0" />
+      <point x="8397.718515037594" y="4940.0" />
+      <point x="8397.718515037594" y="1334.0" />
+      <point x="7149.605419799498" y="1334.0" />
+      <point x="55.91666666666697" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.UnmountCommand">
+      <point x="-90.07999999999993" y="-73.5" />
+      <point x="3651.6895757824145" y="4860.0" />
+      <point x="2885.9999999999995" y="4860.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuController" target="com.alex323glo.os.fss.model.descriptor.FileDescriptor">
+      <point x="-94.22222222222217" y="-200.0" />
+      <point x="3126.5048228992205" y="3125.0" />
+      <point x="3506.291332009761" y="3125.0" />
+      <point x="3506.291332009761" y="1792.0" />
+      <point x="5665.050595238095" y="1792.0" />
+      <point x="-84.33333333333303" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.TruncateCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="-45.75" y="-38.5" />
+      <point x="523.25" y="3935.0" />
+      <point x="517.2837993282083" y="3935.0" />
+      <point x="517.2837993282083" y="2095.0" />
+      <point x="3288.260082009761" y="2095.0" />
+      <point x="-93.03125" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.model.descriptor.StringDescriptorIDGenerator">
+      <point x="225.19999999999982" y="-73.5" />
+      <point x="3966.9695757824143" y="4920.0" />
+      <point x="8120.2185150375935" y="4920.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.UnlinkCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="137.25" y="-38.5" />
+      <point x="1479.2499999999995" y="3975.0" />
+      <point x="3227.1249999999995" y="3975.0" />
+      <point x="-102.9375" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.FileLink" target="com.alex323glo.os.fss.model.file.AbstractFile">
+      <point x="50.57142857142844" y="-86.0" />
+      <point x="5222.341004353842" y="2125.0" />
+      <point x="5407.610776454206" y="2125.0" />
+      <point x="-93.625" y="61.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.AbstractFile" target="com.alex323glo.os.fss.model.file.FileType">
+      <point x="89.16666666666697" y="-61.5" />
+      <point x="5590.402443120873" y="1862.0" />
+      <point x="6283.751253132831" y="1862.0" />
+      <point x="-12.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.system.FileSystem" target="com.alex323glo.os.fss.model.file.FileBlock">
+      <point x="51.78947368421086" y="-224.0" />
+      <point x="6509.6727688056535" y="2527.0" />
+      <point x="6828.35980576441" y="2527.0" />
+      <point x="6828.35980576441" y="1682.0" />
+      <point x="5287.1875" y="1682.0" />
+      <point x="91.66666666666697" y="109.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.LinkCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="-137.25" y="-38.5" />
+      <point x="2362.7499999999995" y="3935.0" />
+      <point x="2260.7837993282087" y="3935.0" />
+      <point x="2260.7837993282087" y="2145.0" />
+      <point x="3359.822582009761" y="2145.0" />
+      <point x="-21.46875" y="27.0" />
+    </edge>
+    <edge source="java.lang.Throwable" target="java.io.Serializable">
+      <point x="291.55555555555566" y="-454.0" />
+      <point x="3169.0135542319827" y="326.0" />
+      <point x="6407.000619682846" y="326.0" />
+      <point x="-38.33333333333303" y="15.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.UnmountCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="0.0" y="-38.5" />
+      <point x="2885.9999999999995" y="3935.0" />
+      <point x="2958.319444444444" y="3935.0" />
+      <point x="2958.319444444444" y="3785.0" />
+      <point x="3207.4770451214426" y="3785.0" />
+      <point x="-13.25" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.FileType" target="java.lang.Enum">
+      <point x="0.0" y="-38.5" />
+      <point x="68.25" y="189.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuController" target="com.alex323glo.os.fss.model.descriptor.DescriptorIDGenerator">
+      <point x="188.44444444444434" y="-200.0" />
+      <point x="3409.171489565887" y="3275.0" />
+      <point x="6983.396453016179" y="3275.0" />
+      <point x="6983.396453016179" y="2617.0" />
+      <point x="7115.897086466165" y="2617.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.LsCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="-45.75" y="-50.0" />
+      <point x="4054.3125" y="4015.0" />
+      <point x="4088.5962993282087" y="4015.0" />
+      <point x="4088.5962993282087" y="3755.0" />
+      <point x="3313.4770451214426" y="3755.0" />
+      <point x="92.75" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.loader.VirtualFileSystemLoader" target="com.alex323glo.os.fss.loader.FileSystemLoader">
+      <point x="-144.75" y="-74.5" />
+      <point x="7548.9685150375935" y="4263.0" />
+      <point x="7569.438753132832" y="4263.0" />
+      <point x="76.66666666666697" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.LinkCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="45.75" y="-38.5" />
+      <point x="2545.7499999999995" y="3935.0" />
+      <point x="2459.2837993282087" y="3935.0" />
+      <point x="2459.2837993282087" y="3775.0" />
+      <point x="3180.9770451214426" y="3775.0" />
+      <point x="-39.75" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuController" target="com.alex323glo.os.fss.model.system.FileSystem">
+      <point x="141.33333333333348" y="-200.0" />
+      <point x="3362.060378454776" y="3245.0" />
+      <point x="6020.54996178811" y="3245.0" />
+      <point x="-437.33333333333303" y="224.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.ConsoleView">
+      <point x="-45.039999999999964" y="-73.5" />
+      <point x="3696.7295757824145" y="4840.0" />
+      <point x="3537.7812499999995" y="4840.0" />
+      <point x="102.75" y="97.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.descriptor.FileDescriptor" target="com.alex323glo.os.fss.model.file.AbstractFile">
+      <point x="0.0" y="85.5" />
+      <point x="5749.383928571428" y="1842.0" />
+      <point x="5554.735776454206" y="1842.0" />
+      <point x="53.5" y="-61.5" />
+    </edge>
+    <edge source="java.lang.Throwable" target="java.lang.Throwable.PrintStreamOrWriter">
+      <point x="-291.55555555555566" y="-454.0" />
+      <point x="2585.9024431208713" y="336.0" />
+      <point x="2198.9163320097605" y="336.0" />
+      <point x="2198.9163320097605" y="121.0" />
+      <point x="2989.1888506769983" y="121.0" />
+      <point x="-74.25" y="50.5" />
+    </edge>
+    <edge source="java.lang.Throwable" target="java.lang.Throwable.WrappedPrintWriter">
+      <point x="72.88888888888869" y="-454.0" />
+      <point x="2950.3468875653157" y="296.0" />
+      <point x="3387.9388506769983" y="296.0" />
+      <point x="-63.75" y="62.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.model.file.File">
+      <point x="-75.71428571428532" y="-258.5" />
+      <point x="6265.013623401463" y="4223.0" />
+      <point x="5781.383295121443" y="4223.0" />
+      <point x="0.0" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.ConsoleView" target="com.alex323glo.os.fss.view.CommandMapper">
+      <point x="117.42857142857156" y="-97.0" />
+      <point x="3552.459821428571" y="4263.0" />
+      <point x="3603.5624999999995" y="4263.0" />
+      <point x="-117.0" y="74.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.ReadCommand">
+      <point x="-270.2399999999998" y="-73.5" />
+      <point x="3471.5295757824147" y="4940.0" />
+      <point x="183.0" y="4940.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.FileLink" target="com.alex323glo.os.fss.model.descriptor.FileDescriptor">
+      <point x="-50.57142857142844" y="-86.0" />
+      <point x="5121.198147210986" y="2115.0" />
+      <point x="5034.019575782414" y="2115.0" />
+      <point x="5034.019575782414" y="1802.0" />
+      <point x="5681.917261904762" y="1802.0" />
+      <point x="-67.46666666666624" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.system.FileSystem" target="com.alex323glo.os.fss.model.descriptor.DescriptorID">
+      <point x="258.9473684210525" y="-224.0" />
+      <point x="6716.830663542495" y="2567.0" />
+      <point x="6877.85980576441" y="2567.0" />
+      <point x="6877.85980576441" y="2125.0" />
+      <point x="7088.188753132831" y="2125.0" />
+      <point x="-5.08333333333303" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuController" target="com.alex323glo.os.fss.model.file.FileLink">
+      <point x="-47.11111111111086" y="-200.0" />
+      <point x="3173.615934010332" y="3135.0" />
+      <point x="3517.291332009761" y="3135.0" />
+      <point x="3517.291332009761" y="2397.0" />
+      <point x="5142.269575782414" y="2397.0" />
+      <point x="-29.5" y="86.0" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.lang.Enum">
+      <point x="-68.25" y="189.5" />
+      <point x="6159.251253132831" y="1019.5" />
+      <point x="6071.001253132831" y="1019.5" />
+      <point x="6071.001253132831" y="810.0" />
+      <point x="-136.5" y="-0.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.system.FileSystem" target="com.alex323glo.os.fss.model.file.FileType">
+      <point x="207.15789473684163" y="-224.0" />
+      <point x="6665.041189858284" y="2557.0" />
+      <point x="6866.85980576441" y="2557.0" />
+      <point x="6866.85980576441" y="2115.0" />
+      <point x="7077.188753132831" y="2115.0" />
+      <point x="7077.188753132831" y="1642.0" />
+      <point x="6331.751253132831" y="1642.0" />
+      <point x="36.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.system.FileSystem" target="com.alex323glo.os.fss.model.file.FileLink">
+      <point x="-414.31578947368416" y="-224.0" />
+      <point x="6043.5675056477585" y="2397.0" />
+      <point x="5319.269575782414" y="2397.0" />
+      <point x="147.5" y="86.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.MountCommand">
+      <point x="90.07999999999993" y="-73.5" />
+      <point x="3831.8495757824144" y="4860.0" />
+      <point x="5258.0625" y="4860.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.exception.FileSystemException" target="java.lang.Exception">
+      <point x="0.0" y="-27.0" />
+      <point x="3381.291332009761" y="1702.0" />
+      <point x="3066.791332009761" y="1702.0" />
+      <point x="0.0" y="85.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.FilestatCommand">
+      <point x="-157.63999999999987" y="-73.5" />
+      <point x="3584.1295757824146" y="4890.0" />
+      <point x="1727.9999999999995" y="4890.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.model.descriptor.DescriptorID">
+      <point x="136.28571428571468" y="-258.5" />
+      <point x="6477.013623401463" y="4243.0" />
+      <point x="7367.272086466165" y="4243.0" />
+      <point x="7367.272086466165" y="1364.0" />
+      <point x="7119.105419799498" y="1364.0" />
+      <point x="25.41666666666697" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.LsCommand" target="com.alex323glo.os.fss.model.file.AbstractFile">
+      <point x="137.25" y="-50.0" />
+      <point x="4237.3125" y="4015.0" />
+      <point x="4349.8125" y="4015.0" />
+      <point x="4349.8125" y="3185.0" />
+      <point x="4973.269575782414" y="3185.0" />
+      <point x="4973.269575782414" y="2427.0" />
+      <point x="5596.383295121443" y="2427.0" />
+      <point x="5596.383295121443" y="2065.0" />
+      <point x="5514.610776454206" y="2065.0" />
+      <point x="13.375" y="61.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.system.FileSystem" target="com.alex323glo.os.fss.model.descriptor.DescriptorIDGenerator">
+      <point x="414.31578947368416" y="-224.0" />
+      <point x="6872.199084595127" y="2597.0" />
+      <point x="6975.4970864661655" y="2597.0" />
+      <point x="-140.39999999999964" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.descriptor.OpenedFileDescriptor" target="com.alex323glo.os.fss.model.descriptor.FileDescriptor">
+      <point x="-149.625" y="-85.5" />
+      <point x="6399.165601015608" y="2155.0" />
+      <point x="6480.10980576441" y="2155.0" />
+      <point x="6480.10980576441" y="1712.0" />
+      <point x="5783.117261904762" y="1712.0" />
+      <point x="33.733333333333576" y="85.5" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.lang.Comparable">
+      <point x="-68.25" y="-189.5" />
+      <point x="6159.251253132831" y="316.0" />
+      <point x="6147.001253132831" y="316.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.MountCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="-45.75" y="-38.5" />
+      <point x="5212.3125" y="3925.0" />
+      <point x="5099.8125" y="3925.0" />
+      <point x="5099.8125" y="3725.0" />
+      <point x="3392.9770451214426" y="3725.0" />
+      <point x="172.25" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.model.descriptor.DescriptorIDGenerator">
+      <point x="75.71428571428532" y="-258.5" />
+      <point x="6416.442194830033" y="4223.0" />
+      <point x="7214.397086466165" y="4223.0" />
+      <point x="7214.397086466165" y="2617.0" />
+      <point x="7186.097086466165" y="2617.0" />
+      <point x="70.19999999999982" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.descriptor.StringDescriptorIDGenerator" target="com.alex323glo.os.fss.model.descriptor.DescriptorID">
+      <point x="0.0" y="-38.5" />
+      <point x="8120.2185150375935" y="4263.0" />
+      <point x="8058.551848370927" y="4263.0" />
+      <point x="8058.551848370927" y="1354.0" />
+      <point x="7129.272086466164" y="1354.0" />
+      <point x="35.58333333333303" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.model.system.FileSystem">
+      <point x="180.15999999999985" y="-73.5" />
+      <point x="3921.9295757824143" y="4900.0" />
+      <point x="7897.2185150375935" y="4900.0" />
+      <point x="7897.2185150375935" y="3235.0" />
+      <point x="6895.216628454776" y="3235.0" />
+      <point x="437.33333333333303" y="224.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.CloseCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="45.75" y="-38.5" />
+      <point x="4531.8125" y="4005.0" />
+      <point x="4724.8125" y="4005.0" />
+      <point x="4724.8125" y="3195.0" />
+      <point x="4984.269575782414" y="3195.0" />
+      <point x="4984.269575782414" y="2145.0" />
+      <point x="3402.760082009761" y="2145.0" />
+      <point x="21.46875" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="0.0" y="-73.5" />
+      <point x="3741.7695757824144" y="4820.0" />
+      <point x="3906.5625" y="4820.0" />
+      <point x="3906.5625" y="3995.0" />
+      <point x="3410.1249999999995" y="3995.0" />
+      <point x="80.0625" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.AbstractFile" target="com.alex323glo.os.fss.model.descriptor.FileDescriptor">
+      <point x="-17.83333333333303" y="-61.5" />
+      <point x="5483.402443120873" y="1822.0" />
+      <point x="5715.650595238095" y="1822.0" />
+      <point x="-33.733333333333576" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.WriteCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="146.4000000000001" y="-38.5" />
+      <point x="1101.3999999999996" y="3965.0" />
+      <point x="3204.2499999999995" y="3965.0" />
+      <point x="-125.8125" y="50.0" />
+    </edge>
+    <edge source="java.lang.Throwable.WrappedPrintStream" target="java.lang.Throwable">
+      <point x="66.75" y="62.5" />
+      <point x="2810.6663320097605" y="336.0" />
+      <point x="2877.457998676427" y="336.0" />
+      <point x="0.0" y="-454.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.LsCommand">
+      <point x="22.519999999999982" y="-73.5" />
+      <point x="3764.2895757824144" y="4830.0" />
+      <point x="4100.0625" y="4830.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.CreateCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="-137.25" y="-38.5" />
+      <point x="1976.7499999999995" y="3935.0" />
+      <point x="1874.7837993282087" y="3935.0" />
+      <point x="1874.7837993282087" y="2135.0" />
+      <point x="3345.510082009761" y="2135.0" />
+      <point x="-35.78125" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuController" target="com.alex323glo.os.fss.model.file.File">
+      <point x="47.11111111111131" y="-200.0" />
+      <point x="3267.838156232554" y="3165.0" />
+      <point x="3550.291332009761" y="3165.0" />
+      <point x="3550.291332009761" y="2447.0" />
+      <point x="5715.983295121443" y="2447.0" />
+      <point x="-65.39999999999964" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.MountCommand" target="com.alex323glo.os.fss.model.system.FileSystem">
+      <point x="137.25" y="-38.5" />
+      <point x="5395.3125" y="4005.0" />
+      <point x="5273.221299328208" y="4005.0" />
+      <point x="5273.221299328208" y="3255.0" />
+      <point x="6129.883295121443" y="3255.0" />
+      <point x="-328.0" y="224.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.model.file.FileBlock">
+      <point x="-45.42857142857156" y="-258.5" />
+      <point x="6295.299337687176" y="4213.0" />
+      <point x="5955.383295121443" y="4213.0" />
+      <point x="5955.383295121443" y="1732.0" />
+      <point x="5253.854166666666" y="1732.0" />
+      <point x="58.33333333333303" y="109.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.File" target="com.alex323glo.os.fss.model.file.FileBlock">
+      <point x="-65.39999999999964" y="-85.5" />
+      <point x="5715.983295121443" y="2155.0" />
+      <point x="5696.485776454206" y="2155.0" />
+      <point x="5696.485776454206" y="1752.0" />
+      <point x="5220.520833333333" y="1752.0" />
+      <point x="25.0" y="109.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.model.file.FileLink">
+      <point x="-166.57142857142844" y="-258.5" />
+      <point x="6174.1564805443195" y="4253.0" />
+      <point x="5480.883928571428" y="4253.0" />
+      <point x="5480.883928571428" y="3175.0" />
+      <point x="4962.269575782414" y="3175.0" />
+      <point x="4962.269575782414" y="2407.0" />
+      <point x="5201.269575782414" y="2407.0" />
+      <point x="29.5" y="86.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.ConsoleView" target="com.alex323glo.os.fss.view.ConsoleListener">
+      <point x="-117.42857142857156" y="-97.0" />
+      <point x="3317.602678571428" y="4263.0" />
+      <point x="3270.4999999999995" y="4263.0" />
+      <point x="60.5" y="51.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.WriteCommand">
+      <point x="-225.19999999999982" y="-73.5" />
+      <point x="3516.5695757824146" y="4920.0" />
+      <point x="954.9999999999995" y="4920.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.loader.FileSystemLoader" target="com.alex323glo.os.fss.model.system.FileSystem">
+      <point x="0.0" y="-27.0" />
+      <point x="7492.772086466165" y="3265.0" />
+      <point x="6567.216628454776" y="3265.0" />
+      <point x="109.33333333333303" y="224.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.UnlinkCommand" target="com.alex323glo.os.fss.model.file.FileLink">
+      <point x="-45.75" y="-38.5" />
+      <point x="1296.2499999999995" y="3935.0" />
+      <point x="1290.2837993282087" y="3935.0" />
+      <point x="1290.2837993282087" y="3145.0" />
+      <point x="2341.3862806609714" y="3145.0" />
+      <point x="2341.3862806609714" y="2377.0" />
+      <point x="5024.269575782414" y="2377.0" />
+      <point x="-147.5" y="86.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.FileLink" target="com.alex323glo.os.fss.model.file.FileType">
+      <point x="0.0" y="-86.0" />
+      <point x="5171.769575782414" y="1852.0" />
+      <point x="6259.751253132831" y="1852.0" />
+      <point x="-36.0" y="38.5" />
+    </edge>
+    <edge source="java.lang.Throwable" target="java.lang.Throwable.WrappedPrintStream">
+      <point x="-72.88888888888869" y="-454.0" />
+      <point x="2804.5691097875383" y="306.0" />
+      <point x="2677.1663320097605" y="306.0" />
+      <point x="-66.75" y="62.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.TruncateCommand" target="com.alex323glo.os.fss.model.file.FileBlock">
+      <point x="-137.25" y="-38.5" />
+      <point x="431.75" y="3935.0" />
+      <point x="329.78379932820826" y="3935.0" />
+      <point x="329.78379932820826" y="1722.0" />
+      <point x="5120.520833333333" y="1722.0" />
+      <point x="-75.0" y="109.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.descriptor.StringDescriptorIDGenerator" target="com.alex323glo.os.fss.model.descriptor.DescriptorIDGenerator">
+      <point x="-134.33333333333303" y="-38.5" />
+      <point x="7985.8851817042605" y="4263.0" />
+      <point x="8047.551848370927" y="4263.0" />
+      <point x="8047.551848370927" y="2617.0" />
+      <point x="7256.297086466165" y="2617.0" />
+      <point x="140.39999999999964" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.descriptor.StringDescriptorIDGenerator" target="com.alex323glo.os.fss.model.descriptor.StringDescriptorID">
+      <point x="134.33333333333394" y="-38.5" />
+      <point x="8254.551848370927" y="4263.0" />
+      <point x="8222.218515037594" y="4263.0" />
+      <point x="-55.0" y="74.0" />
+    </edge>
+    <edge source="java.lang.Exception" target="java.lang.Throwable">
+      <point x="84.0" y="-85.0" />
+      <point x="273.3333333333335" y="454.0" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.io.Serializable">
+      <point x="68.25" y="-189.5" />
+      <point x="6295.751253132831" y="336.0" />
+      <point x="6445.333953016179" y="336.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.CreateCommand" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="45.75" y="-38.5" />
+      <point x="2159.7499999999995" y="3935.0" />
+      <point x="2073.2837993282087" y="3935.0" />
+      <point x="2073.2837993282087" y="3765.0" />
+      <point x="3154.4770451214426" y="3765.0" />
+      <point x="-66.25" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.model.descriptor.FileDescriptor">
+      <point x="106.0" y="-258.5" />
+      <point x="6446.727909115748" y="4233.0" />
+      <point x="7301.897086466165" y="4233.0" />
+      <point x="7301.897086466165" y="2105.0" />
+      <point x="7066.188753132831" y="2105.0" />
+      <point x="7066.188753132831" y="1652.0" />
+      <point x="5850.583928571428" y="1652.0" />
+      <point x="101.19999999999982" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuController" target="com.alex323glo.os.fss.model.file.FileBlock">
+      <point x="-141.33333333333348" y="-200.0" />
+      <point x="3079.393711788109" y="3115.0" />
+      <point x="3256.291332009761" y="3115.0" />
+      <point x="3256.291332009761" y="1752.0" />
+      <point x="5170.520833333333" y="1752.0" />
+      <point x="-25.0" y="109.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.CloseCommand" target="com.alex323glo.os.fss.model.descriptor.OpenedFileDescriptor">
+      <point x="137.25" y="-38.5" />
+      <point x="4623.3125" y="4015.0" />
+      <point x="4735.8125" y="4015.0" />
+      <point x="4735.8125" y="3205.0" />
+      <point x="5177.269575782414" y="3205.0" />
+      <point x="5177.269575782414" y="2467.0" />
+      <point x="6434.790601015608" y="2467.0" />
+      <point x="-114.0" y="85.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.Main" target="com.alex323glo.os.fss.view.command.implementations.UnlinkCommand">
+      <point x="-180.15999999999985" y="-73.5" />
+      <point x="3561.6095757824146" y="4900.0" />
+      <point x="1341.9999999999995" y="4900.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.ReadCommand" target="com.alex323glo.os.fss.exception.FileSystemException">
+      <point x="-45.75" y="-38.5" />
+      <point x="137.25" y="4015.0" />
+      <point x="131.28379932820826" y="4015.0" />
+      <point x="131.28379932820826" y="2085.0" />
+      <point x="3273.947582009761" y="2085.0" />
+      <point x="-107.34375" y="27.0" />
+    </edge>
+    <edge source="java.lang.Throwable.WrappedPrintWriter" target="java.lang.Throwable.PrintStreamOrWriter">
+      <point x="0.0" y="-62.5" />
+      <point x="3451.6888506769983" y="131.0" />
+      <point x="3088.1888506769983" y="131.0" />
+      <point x="24.75" y="50.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.File" target="com.alex323glo.os.fss.model.file.FileType">
+      <point x="130.80000000000018" y="-85.5" />
+      <point x="5912.183295121443" y="2155.0" />
+      <point x="6307.751253132831" y="2155.0" />
+      <point x="12.0" y="38.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.WriteCommand" target="com.alex323glo.os.fss.model.file.FileBlock">
+      <point x="-73.19999999999982" y="-38.5" />
+      <point x="881.7999999999997" y="3925.0" />
+      <point x="722.2087993282089" y="3925.0" />
+      <point x="722.2087993282089" y="1742.0" />
+      <point x="5153.854166666666" y="1742.0" />
+      <point x="-41.66666666666697" y="109.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.system.FileSystem" target="com.alex323glo.os.fss.model.file.File">
+      <point x="-258.9473684210525" y="-224.0" />
+      <point x="6198.93592670039" y="2367.0" />
+      <point x="5912.183295121443" y="2367.0" />
+      <point x="130.80000000000018" y="85.5" />
+    </edge>
+    <edge source="java.lang.Throwable.SentinelHolder" target="java.lang.Throwable">
+      <point x="95.25" y="50.5" />
+      <point x="2495.1663320097605" y="316.0" />
+      <point x="2731.680220898649" y="316.0" />
+      <point x="-145.77777777777783" y="-454.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.ConsoleView" target="com.alex323glo.os.fss.controller.MenuController">
+      <point x="58.71428571428578" y="-97.0" />
+      <point x="3493.7455357142853" y="4263.0" />
+      <point x="3534.5624999999995" y="4263.0" />
+      <point x="3534.5624999999995" y="3765.0" />
+      <point x="3286.9770451214426" y="3765.0" />
+      <point x="66.25" y="200.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.controller.MenuControllerImpl" target="com.alex323glo.os.fss.model.file.AbstractFile">
+      <point x="-106.0" y="-258.5" />
+      <point x="6234.727909115748" y="4233.0" />
+      <point x="5607.383295121443" y="4233.0" />
+      <point x="5607.383295121443" y="2055.0" />
+      <point x="5541.360776454206" y="2055.0" />
+      <point x="40.125" y="61.5" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.ConsoleView" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="-58.71428571428578" y="-97.0" />
+      <point x="3376.3169642857138" y="4263.0" />
+      <point x="3341.4999999999995" y="4263.0" />
+      <point x="11.4375" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.descriptor.OpenedFileDescriptor" target="com.alex323glo.os.fss.model.descriptor.DescriptorID">
+      <point x="49.875" y="-85.5" />
+      <point x="6598.665601015608" y="2145.0" />
+      <point x="6806.35980576441" y="2145.0" />
+      <point x="6806.35980576441" y="1364.0" />
+      <point x="7068.272086466164" y="1364.0" />
+      <point x="-25.41666666666697" y="27.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.view.command.implementations.CreateCommand" target="com.alex323glo.os.fss.view.command.Command">
+      <point x="137.25" y="-38.5" />
+      <point x="2251.2499999999995" y="3995.0" />
+      <point x="3272.8749999999995" y="3995.0" />
+      <point x="-57.1875" y="50.0" />
+    </edge>
+    <edge source="com.alex323glo.os.fss.model.file.FileLink" target="com.alex323glo.os.fss.model.file.FileBlock">
+      <point x="-101.14285714285688" y="-86.0" />
+      <point x="5070.626718639557" y="2125.0" />
+      <point x="5023.019575782414" y="2125.0" />
+      <point x="5023.019575782414" y="1762.0" />
+      <point x="5187.1875" y="1762.0" />
+      <point x="-8.33333333333303" y="109.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.46812957157784746" x="960.3102678571429" y="2588.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
