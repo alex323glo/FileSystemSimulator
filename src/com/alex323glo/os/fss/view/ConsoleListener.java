@@ -34,11 +34,11 @@ public class ConsoleListener {
      */
     public String getInput() {
 
+        System.out.print("$ ");
         String line = scanner.nextLine();
         if (line == null) {
             throw new NullPointerException("line is null");
         }
-        scanner.close();
 
         return line;
     }

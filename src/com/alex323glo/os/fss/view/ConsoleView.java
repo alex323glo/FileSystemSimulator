@@ -4,7 +4,11 @@ import com.alex323glo.os.fss.controller.MenuController;
 import com.alex323glo.os.fss.holder.ObjectHolder;
 import com.alex323glo.os.fss.view.command.Command;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 /**
  * View part of console application. Uses MenuController to work
@@ -27,11 +31,14 @@ public class ConsoleView<T, I> {
     /**
      * Initial constructor.
      *
+     * @param menuController initial field value.
+     * @param commandMapper initial field value.
+     *
      * @see MenuController
      * @see T
      * @see I
      * */
-    public ConsoleView(CommandMapper<T, I> commandMapper) {
+    public ConsoleView(MenuController<T, I> menuController, CommandMapper<T, I> commandMapper) {
         if (menuController == null || commandMapper == null) {
             throw new NullPointerException("menuController or commandMapper is null");
         }
@@ -56,8 +63,8 @@ public class ConsoleView<T, I> {
     private void chooseMenuItem() {
 
         while (true) {
-            if (!manageMenuItems(consoleListener.getInput())) {
-                break;
+            if (true) {
+                manageMenuItems(consoleListener.getInput());
             }
         }
 
@@ -79,20 +86,40 @@ public class ConsoleView<T, I> {
             throw new NullPointerException("consoleInput is null");
         }
 
-        String[] parts = consoleInput.split(" ");
-        if (parts.length < 2) {
-            System.out.println("ERROR: Wrong command.");
+        if (consoleInput.length() < 1 || consoleInput.trim().length() < 1) {
+            System.out.println("\tERROR: Wrong command (empty command line).");
             return false;
         }
 
-        Arrays.stream(parts).map(String::trim).count();
+        // If user choose to exit app:
+        if (consoleInput.trim().toLowerCase().equals("exit")) {
+            System.exit(0);
+        }
+
+        // Parses input String:
+        List<String> partsList = Arrays.asList(consoleInput.split(" "));
+
+        List<String> newPartsList = new ArrayList<>();
+        for (String part: partsList) {
+            if (part.length() > 0) {
+                newPartsList.add(part);
+            }
+        }
+
+        String[] parts = new String[newPartsList.size()];
+        parts = newPartsList.toArray(parts);
+
+        if (parts.length < 1) {
+            System.out.println("\tERROR: Wrong command (empty command line).");
+            return false;
+        }
 
         String commandName = parts[0].toLowerCase();
-        String[] params = Arrays.copyOfRange(parts, 1, parts.length - 1);
+        String[] params = Arrays.copyOfRange(parts, 1, parts.length);
 
         Command<T, I> command = commandMapper.get(commandName);
         if (command == null) {
-            System.out.println("ERROR: Wrong command.");
+            System.out.println("\tERROR: Command is null (wasn't parsed correctly).");
             return false;
         }
 
