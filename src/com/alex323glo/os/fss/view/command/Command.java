@@ -38,7 +38,7 @@ public abstract class Command<T, I> {
         }
 
         if (params.length != getNumOfParams() || (getNumOfParams() != 0 && params[0] == null)) {
-            System.out.println("ERROR: wrong number of params (should be 1)");
+            System.out.println("\tERROR: wrong number of params (should be " + getNumOfParams() + ")");
             return false;
         }
 
