@@ -1,0 +1,119 @@
+/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/bin/java -javaagent:/opt/idea-IU-172.4155.36/lib/idea_rt.jar=40441:/opt/idea-IU-172.4155.36/bin -Dfile.encoding=UTF-8 -classpath /usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/deploy.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/ext/dnsns.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/ext/jaccess.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/ext/jfxrt.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/ext/localedata.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/ext/nashorn.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/ext/sunec.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/ext/zipfs.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/javaws.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/jfxswt.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/management-agent.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/plugin.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0/jdk1.8.0_144/jre/lib/rt.jar:/home/alex323glo/Java/Idea/FileSystemSimulator/out/production/FileSystemSimulator com.alex323glo.os.fss.Main
+$ umount
+	ERROR: FileSystem is not mounted
+$ mount fs2sdfsdf
+	ERROR: no FileSystems found by path "fs2sdfsdf"
+$ open f1.txt
+	ERROR: FileSystem is not mounted
+$ mount fs1
+	Mount was successful!
+$ ls
+	ERROR: mounted FileSystem doesn't contain any AbstractFile
+$ create f1.txr
+	File "f1.txr" was successfully created.
+	File{name='f1.txr', descriptor={id='fs1_10'}, fileBlocks=[]}
+$ ls
+	File list:
+		1. "f1.txr"  descriptor_id: "fs1_10"
+$ create f2.txt
+	File "f2.txt" was successfully created.
+	File{name='f2.txt', descriptor={id='fs1_11'}, fileBlocks=[]}
+$ ls
+	File list:
+		1. "f1.txr"  descriptor_id: "fs1_10"
+		2. "f2.txt"  descriptor_id: "fs1_11"
+$ open fs1_11
+	ERROR: mounted FileSystem doesn't contain File with name "fs1_11"
+$ open f1.txr
+	File "f1.txr" was successfully opened.
+	OpenedFileDescriptor{id={id='2dbb6e07-8948-478d-adb0-f900a735989e'}, fileDescriptor=FileDescriptor{id={id='fs1_10'}, abstractFile=File{name='f1.txr', descriptor={id='fs1_10'}, fileBlocks=[]}}}
+$ write 2dbb6e07-8948-478d-adb0-f900a735989e 0 4
+	Enter FileBlocks:
+	1) 111
+	2) 222
+	3) 333
+	4) 444
+	Writing blocks...
+	Data (4 blocks) was successfully written to file "2dbb6e07-8948-478d-adb0-f900a735989e" (from position 0).
+$ read 2dbb6e07-8948-478d-adb0-f900a735989e 0 4
+	File "2dbb6e07-8948-478d-adb0-f900a735989e" was read successfully.
+	FileBlock list [0..3]
+		{id='0', data='111'}
+		{id='1', data='222'}
+		{id='2', data='333'}
+		{id='3', data='444'}
+$ 2dbb6e07-8948-478d-adb0-f900a735989e 0 2
+	ERROR: Command is null (wasn't parsed correctly).
+$ read 2dbb6e07-8948-478d-adb0-f900a735989e 0 2
+	File "2dbb6e07-8948-478d-adb0-f900a735989e" was read successfully.
+	FileBlock list [0..1]
+		{id='0', data='111'}
+		{id='1', data='222'}
+$ read 2dbb6e07-8948-478d-adb0-f900a735989e 2 2
+	File "2dbb6e07-8948-478d-adb0-f900a735989e" was read successfully.
+	FileBlock list [2..3]
+		{id='2', data='333'}
+		{id='3', data='444'}
+$  read 2dbb6e07-8948-478d-adb0-f900a735989e 5 1
+	ERROR: from or/and size are wrong for such number of FileBlocks (4)
+$ close 2dbb6e07-8948-478d-adb0-f900a735989e
+	File "2dbb6e07-8948-478d-adb0-f900a735989e" was successfully closed.
+$ link f2.txt l1.link
+	ERROR: no AbstractFile with such fileName in current FileSystem
+$ ls
+	File list:
+		1. "f1.txr"  descriptor_id: "fs1_10"
+		2. "f2.txt"  descriptor_id: "fs1_11"
+$ link f2.txt l1.link
+	Link "l1.link" was successfully created for file "f2.txt".
+	Link{name='l1.link', descriptor={id='fs1_17'}, target='f2.txt'}
+$ ls
+	File list:
+		1. "f1.txr"  descriptor_id: "fs1_10"
+		2. "f2.txt"  descriptor_id: "fs1_11"
+		3. "l1.link"  descriptor_id: "fs1_17"
+$ open l1.link
+	File "l1.link" was successfully opened.
+	OpenedFileDescriptor{id={id='038d33a0-2df7-4f2e-b895-d91a037c707a'}, fileDescriptor=FileDescriptor{id={id='fs1_17'}, abstractFile=Link{name='l1.link', descriptor={id='fs1_17'}, target='f2.txt'}}}
+$ read 038d33a0-2df7-4f2e-b895-d91a037c707a 0 0
+	ERROR: from or/and size are wrong for such number of FileBlocks (0)
+$ write 038d33a0-2df7-4f2e-b895-d91a037c707a 0 3
+	Enter FileBlocks:
+	1) 1111
+	2) 2222
+	3) 3333
+	Writing blocks...
+	Data (3 blocks) was successfully written to file "038d33a0-2df7-4f2e-b895-d91a037c707a" (from position 0).
+$ read 038d33a0-2df7-4f2e-b895-d91a037c707a 0 3
+	File "038d33a0-2df7-4f2e-b895-d91a037c707a" was read successfully.
+	FileBlock list [0..2]
+		{id='4', data='1111'}
+		{id='5', data='2222'}
+		{id='6', data='3333'}
+$ filestat fs1_17
+	FileDescriptor{id={id='fs1_17'}, abstractFile=Link{name='l1.link', descriptor={id='fs1_17'}, target='f2.txt'}}
+$ close 038d33a0-2df7-4f2e-b895-d91a037c707a
+	File "038d33a0-2df7-4f2e-b895-d91a037c707a" was successfully closed.
+$ ls
+	File list:
+		1. "f1.txr"  descriptor_id: "fs1_10"
+		2. "f2.txt"  descriptor_id: "fs1_11"
+		3. "l1.link"  descriptor_id: "fs1_17"
+$ unlink l1.link
+	Link "l1.link" was successfully removed.
+	Link{name='l1.link', descriptor={id='fs1_17'}, target='f2.txt'}
+$ ls
+	File list:
+		1. "f1.txr"  descriptor_id: "fs1_10"
+		2. "f2.txt"  descriptor_id: "fs1_11"
+$ truncate f1.txr 3
+	File "f1.txr" was successfuly resized (new size: 3).
+	Removed blocks:
+		{id='3', data='444'}
+$ filestat fs1_10
+	FileDescriptor{id={id='fs1_10'}, abstractFile=File{name='f1.txr', descriptor={id='fs1_10'}, fileBlocks=[{id='0', data='111'}, {id='1', data='222'}, {id='2', data='333'}]}}
+$ umount
+$ exit
+
+Process finished with exit code 0
+
