@@ -2,19 +2,14 @@ package com.alex323glo.os.fss.view.command.implementations;
 
 import com.alex323glo.os.fss.controller.MenuController;
 import com.alex323glo.os.fss.exception.FileSystemException;
-import com.alex323glo.os.fss.model.system.FileSystem;
+import com.alex323glo.os.fss.model.file.FileLink;
 import com.alex323glo.os.fss.view.command.Command;
 
 /**
- * Command implementation. Used to cover
- * "mount" menu item logic in ConsoleView.
- *
- * @author alex323glo
- * @version 1.0.0
- *
- * @see Command
+ * TODO add doc.
  */
-public class MountCommand<T, I> extends Command<T, I> {
+// TODO finish implementation
+public class LinkCommand<T, I> extends Command<T, I> {
     /**
      * Gets required number of params for each Command implementation.
      *
@@ -22,31 +17,30 @@ public class MountCommand<T, I> extends Command<T, I> {
      */
     @Override
     protected int getNumOfParams() {
-        return 1;
+        return 2;
     }
 
     /**
      * Executes command logic. Uses MenuController to carry out business logic.
      *
-     * @param params parameters for command execution.
+     * @param params         parameters for command execution.
      * @param menuController instance of MenuController, needed to
      *                       carry ouy business logic operations.
      * @return true, if command execution was successful and false,
      * if it wasn't.
-     *
      * @see MenuController
      */
     @Override
-    public boolean executeLogic(String[] params, MenuController<T, I> menuController) {
-        if (params[0] == null) {
-            System.out.println("\tERROR: command param (path) is null");
+    protected boolean executeLogic(String[] params, MenuController<T, I> menuController) {
+        if (params[0] == null || params[1] == null) {
+            System.out.println("\tERROR: command param (name_1 or name_2) is null");
             return false;
         }
 
         try {
-            FileSystem<T, I> mountedFileSystem = menuController.mountFileSystem(params[0]);
-            System.out.println("\tMount was successful!");
-            return true;
+            FileLink<T> fileLink = menuController.createFileLink(params[0], params[1]);
+            System.out.println("\tLink \"" + params[1] + "\" was successfully created for file \"" + params[0] + "\".");
+            System.out.println("\t" + fileLink);
         } catch (FileSystemException e) {
 //            e.printStackTrace();    // TODO could be replaced with logger
             System.out.println("\tERROR: " + e.getMessage());

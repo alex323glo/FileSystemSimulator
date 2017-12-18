@@ -2,19 +2,18 @@ package com.alex323glo.os.fss.view.command.implementations;
 
 import com.alex323glo.os.fss.controller.MenuController;
 import com.alex323glo.os.fss.exception.FileSystemException;
-import com.alex323glo.os.fss.model.system.FileSystem;
 import com.alex323glo.os.fss.view.command.Command;
 
 /**
  * Command implementation. Used to cover
- * "mount" menu item logic in ConsoleView.
+ * "umount" menu item logic in ConsoleView.
  *
  * @author alex323glo
  * @version 1.0.0
  *
  * @see Command
  */
-public class MountCommand<T, I> extends Command<T, I> {
+public class UnmountCommand<T, I> extends Command<T, I> {
     /**
      * Gets required number of params for each Command implementation.
      *
@@ -22,31 +21,24 @@ public class MountCommand<T, I> extends Command<T, I> {
      */
     @Override
     protected int getNumOfParams() {
-        return 1;
+        return 0;
     }
 
     /**
      * Executes command logic. Uses MenuController to carry out business logic.
      *
-     * @param params parameters for command execution.
+     * @param params         parameters for command execution.
      * @param menuController instance of MenuController, needed to
      *                       carry ouy business logic operations.
      * @return true, if command execution was successful and false,
      * if it wasn't.
-     *
      * @see MenuController
      */
     @Override
-    public boolean executeLogic(String[] params, MenuController<T, I> menuController) {
-        if (params[0] == null) {
-            System.out.println("\tERROR: command param (path) is null");
-            return false;
-        }
+    protected boolean executeLogic(String[] params, MenuController<T, I> menuController) {
 
         try {
-            FileSystem<T, I> mountedFileSystem = menuController.mountFileSystem(params[0]);
-            System.out.println("\tMount was successful!");
-            return true;
+            return menuController.unmountFileSystem() != null;
         } catch (FileSystemException e) {
 //            e.printStackTrace();    // TODO could be replaced with logger
             System.out.println("\tERROR: " + e.getMessage());
