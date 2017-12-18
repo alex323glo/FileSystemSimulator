@@ -1,6 +1,6 @@
 package com.alex323glo.os.fss.model.descriptor;
 
-import com.alex323glo.os.fss.model.file.File;
+import com.alex323glo.os.fss.model.file.AbstractFile;
 
 /**
  * File Descriptor model.
@@ -13,7 +13,7 @@ import com.alex323glo.os.fss.model.file.File;
 public class FileDescriptor<T> {
 
     private DescriptorID<T> id;
-    private File file;
+    private AbstractFile<T> abstractFile;
 
     /**
      * Initial constructor.
@@ -28,17 +28,17 @@ public class FileDescriptor<T> {
         this.id = id;
     }
 
-    // TODO add dox
+    // TODO add doc
     public DescriptorID<T> getId() {
         return id;
     }
 
-    public File getFile() {
-        return file;
+    public AbstractFile<T> getAbstractFile() {
+        return abstractFile;
     }
 
-    public void setFile(File file) {
-        this.file = file;
+    public void setAbstractFile(AbstractFile<T> abstractFile) {
+        this.abstractFile = abstractFile;
     }
 
     @Override
@@ -49,7 +49,7 @@ public class FileDescriptor<T> {
         FileDescriptor<?> that = (FileDescriptor<?>) o;
 
         if (!id.equals(that.id)) return false;
-        return file != null ? file.equals(that.file) : that.file == null;
+        return abstractFile != null ? abstractFile.equals(that.abstractFile) : that.abstractFile == null;
     }
 
     @Override
@@ -57,5 +57,11 @@ public class FileDescriptor<T> {
         return id.hashCode();
     }
 
-    // TODO fix logic
+    @Override
+    public String toString() {
+        return "FileDescriptor{" +
+                "id=" + id +
+                ", abstractFile=" + abstractFile +
+                '}';
+    }
 }

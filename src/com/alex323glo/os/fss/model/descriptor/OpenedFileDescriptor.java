@@ -54,5 +54,11 @@ public class OpenedFileDescriptor<I, T> {
         return id.hashCode();
     }
 
-    // TODO fix logic
+    @Override
+    public String toString() {
+        return "OpenedFileDescriptor{" +
+                "id=" + id +
+                ", fileDescriptor=" + fileDescriptor +
+                '}';
+    }
 }

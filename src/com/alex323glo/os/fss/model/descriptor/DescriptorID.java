@@ -12,10 +12,18 @@ package com.alex323glo.os.fss.model.descriptor;
  */
 public interface DescriptorID<T> {
 
-    // TODO add doc
+    /**
+     * Gets Descriptor ID value.
+     *
+     * @return value of Descriptor ID.
+     */
     T getID();
+
+    /**
+     * Sets Descriptor ID value.
+     *
+     * @param id initial Descriptor ID value.
+     */
     void setID(T id);
-    int hashCode();
-    // TODO fix logic
 
 }
