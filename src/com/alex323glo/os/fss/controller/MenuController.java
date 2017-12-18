@@ -2,8 +2,10 @@ package com.alex323glo.os.fss.controller;
 
 import com.alex323glo.os.fss.exception.FileSystemException;
 import com.alex323glo.os.fss.model.descriptor.DescriptorID;
+import com.alex323glo.os.fss.model.descriptor.DescriptorIDGenerator;
 import com.alex323glo.os.fss.model.descriptor.FileDescriptor;
 import com.alex323glo.os.fss.model.descriptor.OpenedFileDescriptor;
+import com.alex323glo.os.fss.model.file.AbstractFile;
 import com.alex323glo.os.fss.model.file.File;
 import com.alex323glo.os.fss.model.file.FileBlock;
 import com.alex323glo.os.fss.model.file.FileLink;
@@ -23,6 +25,28 @@ import java.util.List;
 public interface MenuController<T, I> {
 
     /**
+     * TODO add doc.
+     *
+     * @return
+     */
+    DescriptorIDGenerator<T> getDescriptorIdGenerator() throws FileSystemException;
+
+    /**
+     * TODO add doc.
+     *
+     * @return
+     */
+    DescriptorIDGenerator<I> getOpenedFileDescriptorIdGenerator() throws FileSystemException;
+
+    /**
+     * Gets mounted FileSystem.
+     *
+     * @return ref to mounted FileSystem, or null, if
+     * FileSystem is not mounted yet.
+     */
+    FileSystem<T, I> getFileSystem();
+
+    /**
      * Mounts FileSystem, stored in file. Realisation of "mount"
      * command in console menu.
      *
@@ -34,7 +58,7 @@ public interface MenuController<T, I> {
      * @see FileSystem
      * @see FileSystemException
      */
-    FileSystem mountFileSystem(String filePath) throws FileSystemException;
+    FileSystem<T, I> mountFileSystem(String filePath) throws FileSystemException;
 
     /**
      * Unmounts FileSystem from application. Realisation of "umount"
@@ -46,7 +70,7 @@ public interface MenuController<T, I> {
      * @see FileSystem
      * @see FileSystemException
      */
-    FileSystem unmountFileSystem() throws FileSystemException;
+    FileSystem<T, I> unmountFileSystem() throws FileSystemException;
 
     /**
      * Gets data of concrete FileDescriptor in mounted FileSystem.
@@ -66,18 +90,18 @@ public interface MenuController<T, I> {
     FileDescriptor<T> getDescriptor(DescriptorID<T> id) throws FileSystemException;
 
     /**
-     * Gets List of all Files in mounted FileSystem. Realisation of
+     * Gets List of all AbstractFiles in mounted FileSystem. Realisation of
      * "ls" command in console menu.
      *
-     * @return List of files stored in mounted FileSystem.
+     * @return List of AbstractFiles stored in mounted FileSystem.
      * @throws FileSystemException when mounted FileSystem can't
      * give List of stored Files.
      *
-     * @see File
+     * @see AbstractFile
      * @see List
      * @see FileSystemException
      */
-    List<File<T>> getAllFiles() throws FileSystemException;
+    List<AbstractFile<T>> getAllFiles() throws FileSystemException;
 
     /**
      * Creates new File in mounted FileSystem. Realisation of
@@ -92,6 +116,20 @@ public interface MenuController<T, I> {
      * @see FileSystemException
      */
     File<T> createFile(String name) throws FileSystemException;
+
+    /**
+     * Removes concrete File from mounted FileSystem. Realisation of
+     * "remove name" command in console menu.
+     *
+     * @param name String name of File, needed to be removed from mounted FileSystem.
+     * @return reference to removed from mounted FileSystem File.
+     * @throws FileSystemException when mounted FileSystem can't remove concrete File.
+     *
+     * @see File
+     * @see T
+     * @see FileSystemException
+     */
+    File<T> removeFile(String name) throws FileSystemException;
 
     /**
      * Creates new OpenedFileDescriptor in mounted FileSystem for
@@ -145,7 +183,7 @@ public interface MenuController<T, I> {
      * @see I
      * @see FileSystemException
      */
-    List<FileBlock> readFile(DescriptorID<I> openedFileDescriptorID, Long from, Long size)
+    List<FileBlock> readFile(DescriptorID<I> openedFileDescriptorID, Integer from, Integer size)
             throws FileSystemException;
 
     /**
@@ -166,7 +204,7 @@ public interface MenuController<T, I> {
      * @see List
      * @see FileSystemException
      */
-    void writeFile(DescriptorID<I> openedFileDescriptorID, List<FileBlock> data, Long from, Long size)
+    void writeFile(DescriptorID<I> openedFileDescriptorID, List<FileBlock> data, Integer from, Integer size)
             throws FileSystemException;
 
     /**
@@ -213,6 +251,6 @@ public interface MenuController<T, I> {
      * @see List
      * @see FileSystemException
      */
-    List<FileBlock> resizeFile(String name, Long newSize) throws FileSystemException;
+    List<FileBlock> resizeFile(String name, Integer newSize) throws FileSystemException;
 
 }
