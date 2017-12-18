@@ -2,15 +2,14 @@ package com.alex323glo.os.fss.model.file;
 
 import com.alex323glo.os.fss.model.descriptor.FileDescriptor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * TODO add doc
  */
-public class File<T> {
+public class File<T> extends AbstractFile<T> {
 
-    private String name;
-    private FileDescriptor<T> descriptor;
     private List<FileBlock> fileBlocks;
 
     public File() {
@@ -23,34 +22,30 @@ public class File<T> {
 
         this.name = name;
         this.descriptor = descriptor;
+        fileBlocks = new ArrayList<>();
     }
 
     public File(String name, FileDescriptor<T> descriptor, List<FileBlock> fileBlocks) {
+        if (name == null || descriptor == null || fileBlocks == null) {
+            throw new NullPointerException("name, descriptor or fileBlocks is null");
+        }
+
         this.name = name;
         this.descriptor = descriptor;
         this.fileBlocks = fileBlocks;
     }
 
-    public String getName() {
-        return name;
+    @Override
+    public FileType getType() {
+        return FileType.FILE;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public FileDescriptor<T> getDescriptor() {
-        return descriptor;
-    }
-
-    public void setDescriptor(FileDescriptor<T> descriptor) {
-        this.descriptor = descriptor;
-    }
-
+    @Override
     public List<FileBlock> getFileBlocks() {
         return fileBlocks;
     }
 
+    @Override
     public void setFileBlocks(List<FileBlock> fileBlocks) {
         this.fileBlocks = fileBlocks;
     }
@@ -59,7 +54,7 @@ public class File<T> {
     public String toString() {
         return "File{" +
                 "name='" + name + '\'' +
-                ", descriptor=" + descriptor +
+                ", descriptor=" + descriptor.getId() +
                 ", fileBlocks=" + fileBlocks +
                 '}';
     }
